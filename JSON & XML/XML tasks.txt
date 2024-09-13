@@ -1,0 +1,31 @@
+<company>
+  <name>Brevi</name>
+  <industry>Manufacturing</industry>
+  <employees>
+    <employee>
+      <name>Yulia</name>
+      <position>Director</position>
+      <years_of_experience>5</years_of_experience>
+    </employee>
+    <employee>
+      <name>Sergey</name>
+      <position>Manager</position>
+      <years_of_experience>3</years_of_experience>
+    </employee>
+  </employees>
+  <locations>
+    <location>
+      <city>Poltava</city>
+      <country>Ukraine</country>
+    </location>
+    <location>
+      <city>Kyiv</city>
+      <country>Ukraine</country>
+    </location>
+  </locations>
+</company>
+
+Задания к XML:
+1) Добавь новый элемент employee для сотрудника с именем "Olga", должностью "Designer" и 2 годами опыта.
+2) Измени значение элемента <industry> на "Clothing Manufacturing".
+3) Увеличь количество лет опыта у Юлии до 6.
