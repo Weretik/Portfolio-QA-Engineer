@@ -66,12 +66,29 @@ UNIQUE (first_name, last_name)
 	·author_id (ціле число) як первинний ключ.
 	·full_name (рядок) для повного імені автора.
 	·birth_year (ціле число) для року народження автора.
+    
 2.Створіть таблицю "Книги" з такими стовпцями:
 	·book_id (ціле число) як первинний ключ.
 	·title (рядок) для назви книги.
 	·author_id (ціле число) для посилання на автора книги.
 	·publication_year (ціле число) для року публікації книги.
+*/
+DROP TABLE Authors;
+CREATE TABLE Authors (
+author_id INT AUTO_INCREMENT PRIMARY KEY,
+full_name VARCHAR(100),
+birth_year INT
+);
 
+CREATE TABLE Books (
+book_id INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(255),
+author_id INT,
+publication_year INT,
+FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+);
+
+/*
 Задача 5
 1.Змініть таблицю 'books', щоб додати такі обмеження:
 	a.Додайте обмеження зовнішнього ключа (Foreign Key) на стовпець author_id, який посилається на існуючу таблицю під назвою 'authors' з первинним ключем author_id.
@@ -80,3 +97,19 @@ UNIQUE (first_name, last_name)
 	d.Створіть унікальне обмеження, яке забезпечує унікальність комбінації title та author_id.
 2.Назвіть обмеження іноземного ключа 'fk_books_authors', а унікальне обмеження - 'uq_title_author_id'.
 */
+
+ALTER TABLE books
+ADD CONSTRAINT fk_books_authors
+FOREIGN KEY (author_id)
+REFERENCES authors(author_id);
+
+ALTER TABLE books
+MODIFY title VARCHAR(255) NOT NULL;
+
+ALTER TABLE books
+ADD CONSTRAINT chk_publication_year
+CHECK (publication_year >= 1800);
+
+ALTER TABLE books
+ADD CONSTRAINT uq_title_author_id
+UNIQUE (title, author_id);
