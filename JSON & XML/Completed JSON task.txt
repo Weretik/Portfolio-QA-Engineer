@@ -1,0 +1,33 @@
+{
+  "company": {
+    "name": "Brevi Workwear",
+    "industry": "Manufacturing",
+    "employees": [
+      {
+        "name": "Юлія",
+        "position": "директор",
+        "years_of_experience": 5
+      },
+      {
+        "name": "Сергій",
+        "position": "Менеджер",
+        "years_of_experience": 4
+      },
+      {
+        "name": "Ольга",
+        "position": "бухгалтер",
+        "years_of_experience": 4
+      }
+    ],
+    "locations": [
+      {
+        "city": "Полтава",
+        "country": "Україна"
+      },
+      {
+        "city": "Київ",
+        "country": "Україна"
+      }
+    ]
+  }
+}

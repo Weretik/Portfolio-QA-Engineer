@@ -1,0 +1,34 @@
+<educational_institution>
+	<school name="ITVDN" type= "IT school"/>
+	<students>
+		<student>
+			<name_student>Олена</name_student>
+			<class>10-А</class>
+			<year_entry>2010</year_entry>
+		</student>
+		<student>
+			<name_student>Іван</name_student>
+			<class>9-В</class>
+			<year_entry>2008</year_entry>
+		</student>
+		<student>
+			<name_student>Анна</name_student>
+			<class>8-А</class>
+			<year_entry>2012</year_entry>
+		</student>
+	</students>
+	<classrooms>
+		<classroom>
+			<classroom_number>101</classroom_number>
+			<floor>1</floor>
+		</classroom>
+		<classroom>
+			<classroom_number>202</classroom_number>
+			<floor>2</floor>
+		</classroom>
+		<classroom>
+			<classroom_number>303</classroom_number>
+			<floor>3</floor>
+		</classroom>
+	</classrooms>
+</educational_institution>
