@@ -19,7 +19,7 @@ CREATE TABLE clients
      age TINYINT,
      phone VARCHAR(15),
      PRIMARY KEY (id)
-)
+);
 
 -------------------------------------------------------------------------
 INSERT INTO cars             
