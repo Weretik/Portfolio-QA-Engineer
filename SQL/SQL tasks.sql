@@ -47,6 +47,15 @@ LIMIT 5;
 5. Переконайтеся, що ви визначили відповідні типи даних та обмеження для кожного стовпця.
 */
 
+CREATE TABLE employees (
+employee_id INT AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+department VARCHAR(100),
+salary DECIMAL(10, 2),
+hire_date DATE,
+UNIQUE (first_name, last_name)
+)
 
 
 /*
@@ -63,7 +72,7 @@ LIMIT 5;
 	·author_id (ціле число) для посилання на автора книги.
 	·publication_year (ціле число) для року публікації книги.
 
-Задача:
+Задача 5
 1.Змініть таблицю 'books', щоб додати такі обмеження:
 	a.Додайте обмеження зовнішнього ключа (Foreign Key) на стовпець author_id, який посилається на існуючу таблицю під назвою 'authors' з первинним ключем author_id.
 	b.Додайте обмеження NOT NULL для стовпця title, забезпечивши, що у кожної книги є назва.
