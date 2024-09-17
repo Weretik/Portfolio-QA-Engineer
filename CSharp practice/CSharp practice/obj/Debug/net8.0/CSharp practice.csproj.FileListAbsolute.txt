@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\bin\Debug\net8.0\CSharp practice.exe
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\bin\Debug\net8.0\CSharp practice.deps.json
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\bin\Debug\net8.0\CSharp practice.runtimeconfig.json
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\bin\Debug\net8.0\CSharp practice.dll
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\bin\Debug\net8.0\CSharp practice.pdb
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.AssemblyInfo.cs
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.sourcelink.json
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.dll
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\refint\CSharp practice.dll
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.pdb
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\CSharp practice.genruntimeconfig.cache
+C:\Users\User\OneDrive\Рабочий стол\Testing\Portfolio-QA-Engineer\CSharp practice\CSharp practice\obj\Debug\net8.0\ref\CSharp practice.dll
