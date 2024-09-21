@@ -30,4 +30,13 @@ The project is organized into the following files and directories:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/e-knyharnya-testing.git
+
+   git clone --no-checkout https://github.com/Weretik/Portfolio-QA-Engineer.git
+
+   cd Portfolio-QA-Engineer
+
+   git sparse-checkout init --cone
+
+   git sparse-checkout set Projects/Team\ project\ book-ye
+
+   git checkout main
