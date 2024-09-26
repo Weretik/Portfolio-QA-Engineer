@@ -7,5 +7,6 @@ This repository contains the documentation for testing the Brevi website.
 1. **[Brevi website testing plan.pdf](0.%20Brevi%20website%20testing%20plan.pdf)** – A detailed plan outlining the testing approach for brevi.com.ua.
 2. **[Check list for testing the Brevi site.pdf](./1.%20Check%20list%20for%20testing%20the%20Brevi%20site.pdf)** – A checklist covering tests for website loading, localization, GUI, and cross-platform compatibility.
 3. **[Test case for testing the Brevi site.pdf](./2.%20Test%20case%20for%20testing%20the%20Brevi%20site.pdf)** – A tast case cover Smoke testing for verify basic system functions to ensure that critical functionality is working properly.
+4. **[Test scenario for testing the Brevi site.pdf](./3.%20Test%20scenario%20for%20testing%20the%20Brevi%20site.pdf)** – Testing the ability to contact the company: verifying contact information in the header and footer, ordering a consultation through a banner, and the form on the "Contacts" page
 
 Additional files and documentation will be added as the testing progresses.
