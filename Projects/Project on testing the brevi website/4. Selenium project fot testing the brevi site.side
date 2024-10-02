@@ -1,0 +1,642 @@
+{
+  "id": "bfaa0c67-9e7d-4e55-bd84-eb995775fb56",
+  "version": "2.0",
+  "name": "Testing brevi site",
+  "url": "https://brevi.com.ua",
+  "tests": [{
+    "id": "10bbb1ae-c462-41ee-87ec-d6bdae03ff58",
+    "name": "Check product search by name",
+    "commands": [{
+      "id": "16cc54a2-779c-49f6-8bd8-d69af76740ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://brevi.com.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20db7bef-9229-4ea7-aa36-02572ccaea55",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Костюм АНТЕЙ-РМ"
+    }, {
+      "id": "6e90a132-908a-4ac6-a949-092497001637",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "09a07d39-5a12-44e7-810b-189b5c44ef4f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@id='input-search']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7c310e9e-dfa8-48e9-88d7-c6a39d751c94",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[contains(@alt, 'Костюм АНТЕЙ-РМ')]/..",
+      "targets": [
+        ["css=.title > a", "css:finder"],
+        ["xpath=//section[@id='product-search']/main/div[2]/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/magazin/kostyum-antej-rm-kurtka-bryuki')])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2dd8a2-518c-4b1f-ba13-de8527f3a75b",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "2011389a-e185-44a2-b877-fc348d475adb",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class = 'product-card']//h1",
+      "targets": [],
+      "value": "Костюм АНТЕЙ-РМ (куртка, брюки)"
+    }, {
+      "id": "35ed7f2a-f291-4c17-b276-9d790a7a15b1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c217fa5-9143-4ac2-b682-6ce424f11492",
+    "name": "Adding a product to the comparison list",
+    "commands": [{
+      "id": "3b66ab6c-48c8-4235-b126-136af89319d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://brevi.com.ua/uk/specodyag-litnij/kostyum-briz-napivkombinezon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe0ac40-3217-47ed-890e-4bdd0da6c775",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class = 'product-card']//h1",
+      "targets": [],
+      "value": "Костюм БРІЗ (напівкомбінезон)"
+    }, {
+      "id": "b75d6d17-bea4-414c-ba44-288945a63d96",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@title='порівняння']",
+      "targets": [
+        ["css=.text-end:nth-child(15) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//section[@id='product-product']/main/div/div[2]/div[2]/div/div[2]/div/div[2]/div/p[2]/button", "xpath:idRelative"],
+        ["xpath=//p[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' порівняння')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40604c8a-3661-40a6-a236-f38d66002ad5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href = 'https://brevi.com.ua/uk/porivnyatu/']",
+      "targets": [
+        ["css=.btn-compare", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://brevi.com.ua/uk/porivnyatu/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec8822b4-2b45-469d-9e8e-72941796c031",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "e007f04a-e894-4a46-9c5b-718220019d35",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//td[text()='Товар']/../td//strong",
+      "targets": [],
+      "value": "Костюм БРІЗ (напівкомбінезон)"
+    }]
+  }, {
+    "id": "9fdb8f0b-c615-4d83-bea8-d77740976f9b",
+    "name": "Removing a product from the comparison list",
+    "commands": [{
+      "id": "3ff1f398-7886-48ba-9cbb-d4adb5c2f48f",
+      "comment": "",
+      "command": "run",
+      "target": "Adding a product to the comparison list",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d151d7c3-644a-4247-bed1-db77ac9ce32d",
+      "comment": "",
+      "command": "open",
+      "target": "https://brevi.com.ua/uk/porivnyatu/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97636717-59e7-4851-bfa5-c3c218b444b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//td[text()='Товар']/../td//strong",
+      "targets": [],
+      "value": "Костюм БРІЗ (напівкомбінезон)"
+    }, {
+      "id": "683ca6e0-9105-4f7d-b404-41681439bdad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'kostyum-briz-napivkombinezon')][contains(@class, 'btn')]/../a[contains(@href, 'remove')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54c918bd-2ab8-4de0-a766-de28c153f806",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//div[contains(@class, 'alert')]",
+      "targets": [],
+      "value": "Видалено зі списку порівнянь"
+    }]
+  }, {
+    "id": "5c4bedca-fe6b-4713-9d3f-297c1531798d",
+    "name": "Checking the functionality of the main navigation links in the footer of the site ",
+    "commands": [{
+      "id": "1c50f671-e329-449e-ab96-03aac1b288fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://brevi.com.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c227ae9-25d5-44bb-bfe8-c681acd78e46",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'specodyag-optom-vid-vyrobnyka')]",
+      "targets": [
+        ["css=li:nth-child(1) > a > .add", "css:finder"],
+        ["xpath=//div/div/div[2]/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21753c96-c245-4bcf-b430-8a44ae2d7037",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "16255076-7a5d-45ab-8a64-8f004ecd87f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "СПЕЦОДЯГ ОПТОМ ВІД ВИРОБНИКА"
+    }, {
+      "id": "1b78ce8f-8f3a-478d-9d9d-6d5336e71e46",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'magazyn')]",
+      "targets": [
+        ["css=li:nth-child(2) .add", "css:finder"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'в наявності / роздріб')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e507b42b-dbf3-40e8-a179-12d739732a3d",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "361e5aad-5a45-46de-a936-284f8e372200",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "МАГАЗИН"
+    }, {
+      "id": "1ff2aa9f-7d1e-4f16-af53-18b80aa5595a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'dostavka-ta-oplata')]",
+      "targets": [
+        ["linkText=Доставка / оплата", "linkText"],
+        ["css=.fbold > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Доставка / оплата')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/dostavka-ta-oplata')])[3]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Доставка / оплата')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f37a1edc-2ccf-425f-aa14-d72770a41e83",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "a17fb8a9-b2f7-457e-ab4c-6bf8c3c0a514",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ДОСТАВКА ТА ОПЛАТА"
+    }, {
+      "id": "f308006a-d0a8-4b02-b787-55e73770cf80",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'ugody-korystuvacha')]",
+      "targets": [
+        ["linkText=Угоди користувача", "linkText"],
+        ["css=.fbold > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Угоди користувача')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://brevi.com.ua/uk/ugody-korystuvacha')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Угоди користувача')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "198124de-2586-44b1-bbc4-aa0730acc19e",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "e40d0cfe-f68e-4b07-aa92-535281c98de6",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "УГОДИ КОРИСТУВАЧА"
+    }, {
+      "id": "26b7f754-8da1-403d-886f-635e26f09e52",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'polityka-konfedencijnosti')]",
+      "targets": [
+        ["linkText=Політика конфеденційності", "linkText"],
+        ["css=.fbold > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Політика конфеденційності')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://brevi.com.ua/uk/polityka-konfedencijnosti')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Політика конфеденційності')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7099f9d-9c56-44e4-be1e-fbc8a071ad74",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "544e2726-904c-4bd3-b9f7-78166627d126",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ПОЛІТИКА КОНФЕДЕНЦІЙНОСТІ"
+    }, {
+      "id": "9e3bdf9e-6c78-434f-8b54-c704a4c46ea0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'yurydychna-informaciya')]",
+      "targets": [
+        ["linkText=Юридична інформація", "linkText"],
+        ["css=.fbold > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Юридична інформація')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://brevi.com.ua/uk/yurydychna-informaciya')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Юридична інформація')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b915aa68-5ef0-43d8-8814-c5a9e57b46a0",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "4522d90f-e7c8-468f-8894-452832e78bab",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ЮРИДИЧНА ІНФОРМАЦІЯ"
+    }, {
+      "id": "96f46692-b0b4-4437-b262-a7099aee53d9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'polityka-povernennya-ta-obminu-tovaru')]",
+      "targets": [
+        ["linkText=Повернення/обмін", "linkText"],
+        ["css=.fbold > li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Повернення/обмін')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/polityka-povernennya-ta-obminu-tovaru')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41a94c7f-556b-4adb-9774-e718a5d909fb",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "57eb5250-bba2-47aa-9d8f-d64b6aa0014e",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1[@class='title']",
+      "targets": [],
+      "value": "ПОЛІТИКА ПОВЕРНЕННЯ ТА ОБМІНУ ТОВАРУ"
+    }, {
+      "id": "7d47e15f-b718-42a3-9697-7223cb8ab924",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled fbold']//a[contains(@href, 'kontactu')]",
+      "targets": [
+        ["linkText=Зв'язатися з нами", "linkText"],
+        ["css=.fbold > li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/kontactu/')])[3]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be20a76-dc1d-4cfd-b304-9dbb8f72ab0d",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "f9108864-20a7-49df-ab50-a3cf0de74f88",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ЗВОРОТНІЙ ЗВЯ'ЗОК"
+    }]
+  }, {
+    "id": "edf3ffd4-0cf9-418f-8d6d-88424bcd98ca",
+    "name": "Checking the functionality of additional navigation links in the site footer ",
+    "commands": [{
+      "id": "74ca49cd-f8f2-4ab5-a922-f33a4bcaeda3",
+      "comment": "",
+      "command": "open",
+      "target": "https://brevi.com.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3ecf564-52db-41a1-8ad2-8fea2a2aa19d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'pro-nas')]",
+      "targets": [
+        ["linkText=Про нас", "linkText"],
+        ["css=.col-md-3 li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Про нас')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/pro-nas')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8fd6a87-7d40-4221-a74e-3ce47c458330",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "8fe92818-cca3-4896-9777-e10df7007e62",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ПРО НАС"
+    }, {
+      "id": "b87c4404-ca83-4226-9367-94f8f11f6d74",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'nashi-roboty')]",
+      "targets": [
+        ["linkText=Наші роботи", "linkText"],
+        ["css=.col-md-3 li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Наші роботи')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/nashi-roboty')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a9f6a9e-aaf9-4fe5-b860-b22a72083273",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "8a5d8a87-7f5c-4a83-8c76-e6dd52abcbbd",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "НАШІ РОБОТИ"
+    }, {
+      "id": "008acfcf-1e3f-4e7b-925e-b3296c73eb27",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'statti')]",
+      "targets": [
+        ["linkText=Статті", "linkText"],
+        ["css=.col-md-3 li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Статті')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/statti/')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5b47b6-9218-4cef-97e6-106a0593fc7c",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "9a85ffe1-8997-45cb-bd90-faacbc85ccab",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "СТАТТІ"
+    }, {
+      "id": "eee4edb0-0635-4b6a-af13-64230b766fdc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'vidguky')]",
+      "targets": [
+        ["linkText=Відгуки", "linkText"],
+        ["css=.col-md-3 li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Відгуки')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/vidguky')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d7c795c-f802-44c6-b464-5f020b637317",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "0fdcb831-6571-4a42-b8f9-8d22f4234706",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ВІДГУКИ"
+    }, {
+      "id": "c5177c41-5a23-4f4a-a22d-d72ec9f49f2d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'vyrobnyctvo')]",
+      "targets": [
+        ["linkText=Виробництво", "linkText"],
+        ["css=.col-md-3 li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Виробництво')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/vyrobnyctvo')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb3c3c1d-4b7e-48dd-a2e5-2b19476ee029",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "10f0b192-7ebe-4922-9328-ac0dfd74e2ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ВИРОБНИЦТВО"
+    }, {
+      "id": "5eddfaf0-0c37-4a8d-9094-dd3e0a26ef15",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'sertyfikaty')]",
+      "targets": [
+        ["linkText=Сертифікати", "linkText"],
+        ["css=.col-md-3 li:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Сертифікати')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/sertyfikaty')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ea39595-93ca-443c-8cd8-fc69c1641f03",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "d07b5dd1-12ad-493a-a611-a90ba8224b39",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "СЕРТИФІКАТИ"
+    }, {
+      "id": "b5dbd180-acc5-4e13-8700-c478374242e1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'dogovir')]",
+      "targets": [
+        ["linkText=Договір", "linkText"],
+        ["css=.col-md-3 li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Договір')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://brevi.com.ua/uk/dogovir')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c03b3c33-e8f8-454f-b8b4-a350b9acbe25",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "88c25990-be98-4bcd-9918-731cdd58548f",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ДОГОВІР"
+    }, {
+      "id": "b2ed5b25-dad4-4586-8d44-904e468f5760",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='list-unstyled']//a[contains(@href, 'nanesennya-logotypiv')]",
+      "targets": [
+        ["linkText=Нанесення логотипів", "linkText"],
+        ["css=.col-md-3 li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Нанесення логотипів')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://brevi.com.ua/uk/nanesennya-logotypiv')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Нанесення логотипів')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bba3bd23-0cf3-40fc-a765-c7db22a6cea6",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "58b84c24-591e-4914-ad44-8c8509d4b38a",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "ПРО НАС"
+    }]
+  }],
+  "suites": [{
+    "id": "cd9edb10-63ec-459c-b30f-589e687b105a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://brevi.com.ua/"],
+  "plugins": []
+}
