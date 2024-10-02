@@ -8,7 +8,6 @@ This repository contains my practical assignments and pet projects. Here you wil
 - **MySQL** for database management and testing.
 - **Selenium** for automated web testing.
 - **Postman** for API testing.
-- **JMeter** for performance and load testing.
 
 I am learning QA and test automation, and I will update this repository with new projects as I progress.
 
