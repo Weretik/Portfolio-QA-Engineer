@@ -9,13 +9,14 @@ This repository contains the documentation for testing the Brevi website.
 3. **[Test case for testing the Brevi site.pdf](./2.%20Test%20case%20for%20testing%20the%20Brevi%20site.pdf)** – A test case covering smoke testing to verify basic system functions to ensure that critical functionality is working properly.
 4. **[Test scenario for testing the Brevi site.pdf](./3.%20Test%20scenario%20for%20testing%20the%20Brevi%20site.pdf)** – Testing the ability to contact the company: verifying contact information in the header and footer, ordering a consultation through a banner, and the form on the "Contacts" page.
 5. **[Selenium project for testing the Brevi site.side](./4.%20Selenium%20project%20fot%20testing%20the%20brevi%20site.side)** – A Selenium project file (.side) created for automated testing of the Brevi website.
+6. **[Report on the experience testing of the Brevi website.pdf](./5.%20Report%20on%20the%20experience%20testing%20of%20the%20Brevi%20website.pdf)** – A report documenting the findings from exploratory testing on the Brevi website. It includes a summary of identified issues, observations on site behavior, and recommendations for improving functionality and user experience.
 
 ### Postman Testing
 
 Located in the **Postman testing** folder are the Postman environment and collection files used for functional testing of the Brevi website:
 
-6. **[Brevi site.postman_environment.json](./Postman%20testing/Brevi%20site.postman_environment.json)** – The Postman environment file, containing variables and configurations for testing.
-7. **[Functional testing.postman_collection.json](./Postman%20testing/Functional%20testing.postman_collection.json)** – A Postman collection file with requests and tests for functional testing of the Brevi website.
+- **[Brevi site.postman_environment.json](./Postman%20testing/Brevi%20site.postman_environment.json)** – The Postman environment file, containing variables and configurations for testing.
+- **[Functional testing.postman_collection.json](./Postman%20testing/Functional%20testing.postman_collection.json)** – A Postman collection file with requests and tests for functional testing of the Brevi website.
 
 #### How to Import Postman Files
 
