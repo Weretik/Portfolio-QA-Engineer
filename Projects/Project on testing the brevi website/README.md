@@ -31,4 +31,17 @@ To start using the Postman environment and collection files for testing, follow 
 5. **Click the "Import" button** to add the files to your Postman workspace.
 6. Once imported, select the environment from the top-right corner of Postman and use the collection to run the tests on the Brevi website.
 
+## Defect Reports
+
+The **Brevi website defect report** folder contains detailed reports on defects found during testing. These defect reports were documented and managed using **Jira**, providing a structured and efficient workflow for tracking and resolving issues. Each defect report provides the following details:
+
+- **Summary** – A concise description of the defect.
+- **Steps to Reproduce** – A step-by-step guide on how to replicate the issue.
+- **Expected Result** – The correct behavior that should have been observed.
+- **Actual Result** – The behavior that was actually observed during testing.
+- **Environment** – Information about the testing environment (OS, browser versions, device types, etc.).
+- **Attachments** – Screenshots or any other relevant files to support the defect.
+
+These defect reports were created based on the previously written testing documentation (test plans, checklists, and test cases) to provide actionable insights for the development team to identify, reproduce, and resolve issues on the Brevi website.
+
 Additional files and documentation will be added as the testing progresses.
