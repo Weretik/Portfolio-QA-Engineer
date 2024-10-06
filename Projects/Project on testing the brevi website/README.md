@@ -8,8 +8,9 @@ This repository contains the documentation for testing the Brevi website.
 2. **[Check list for testing the Brevi site.pdf](./1.%20Check%20list%20for%20testing%20the%20Brevi%20site.pdf)** – A checklist covering tests for website loading, localization, GUI, and cross-platform compatibility.
 3. **[Test case for testing the Brevi site.pdf](./2.%20Test%20case%20for%20testing%20the%20Brevi%20site.pdf)** – A test case covering smoke testing to verify basic system functions to ensure that critical functionality is working properly.
 4. **[Test scenario for testing the Brevi site.pdf](./3.%20Test%20scenario%20for%20testing%20the%20Brevi%20site.pdf)** – Testing the ability to contact the company: verifying contact information in the header and footer, ordering a consultation through a banner, and the form on the "Contacts" page.
-5. **[Selenium project for testing the Brevi site.side](./4.%20Selenium%20project%20fot%20testing%20the%20brevi%20site.side)** – A Selenium project file (.side) created for automated testing of the Brevi website.
-6. **[Report on the experience testing of the Brevi website.pdf](./5.%20Report%20on%20the%20experience%20testing%20of%20the%20Brevi%20website.pdf)** – A report documenting the findings from exploratory testing on the Brevi website. It includes a summary of identified issues, observations on site behavior, and recommendations for improving functionality and user experience.
+5. **[Selenium project for testing the Brevi site.side](./4.%20Selenium%20project%20fot%20testing%20the%20Brevi%20site.side)** – A Selenium project file (.side) created for automated testing of the Brevi website.
+6. **[Report on the experience testing the Brevi website.pdf](./5.%20Report%20on%20the%20experience%20testing%%20the%20Brevi%20website.pdf)** – A report documenting the findings from exploratory testing on the Brevi website. It includes a summary of identified issues, observations on site behavior, and recommendations for improving functionality and user experience.
+7. **[Test report for testing the Brevi site.pdf](./6.%20Test%20report%20for%20testing%20the%20Brevi%20site.pdf)** – A comprehensive report summarizing the results of testing the Brevi website. The report includes the number of tests conducted, defects identified and categorized by priority, and overall findings.
 
 ### Postman Testing
 
@@ -44,4 +45,3 @@ The **Brevi website defect report** folder contains detailed reports on defects 
 
 These defect reports were created based on the previously written testing documentation (test plans, checklists, and test cases) to provide actionable insights for the development team to identify, reproduce, and resolve issues on the Brevi website.
 
-Additional files and documentation will be added as the testing progresses.
