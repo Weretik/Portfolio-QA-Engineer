@@ -7,7 +7,7 @@
 (при создании экземпляра данного класса) без возможности его дальнейшего изменения. 
 Реализуйте вывод на экран информации о пользователе
  */
-
+Console.WriteLine("Task 1");
 User userVova = new User("Vivian", "Oleg", "Frankovich", 29);
 userVova.ShowInfo();
 
@@ -24,19 +24,20 @@ Converter(double usd, double eur, double chf).
 */
 
 Console.WriteLine();
+Console.WriteLine("Task 2");
 Converter myConverter = new Converter(41.40, 45.05, 47.87);
 
 {
     int totalUah = 25249;
     string currency = "usd";
     double resultConvert = myConverter.Convert(currency, totalUah);
-    Console.WriteLine($"When converting {totalUah} uah to {currency} the result is {resultConvert:F} {currency}");
+    Console.WriteLine($"When converting {totalUah:N0} uah to {currency} the result is {resultConvert:F} {currency}");
 }
 {
     string currency = "chf";
     int totalChf = 1571;
     double resultConvertToUah = myConverter.ConvertToUah(currency, totalChf);
-    Console.WriteLine($"When converting {totalChf} {currency} to uah the result is {resultConvertToUah:F} uah");
+    Console.WriteLine($"When converting {totalChf:N0} {currency} to uah the result is {resultConvertToUah:F} uah");
 }
 
 /*
@@ -51,6 +52,7 @@ Converter myConverter = new Converter(41.40, 45.05, 47.87);
 оклад и налоговый сбор. 
  */
 Console.WriteLine();
+Console.WriteLine("Task 3");
 Employee employee = new Employee("Victor", "Victorovich")
 {
     Position = "Developer",
@@ -59,6 +61,24 @@ Employee employee = new Employee("Victor", "Victorovich")
 employee.DisplayInfo();
 
 
+/*
+  Задание 4
+Требуется: 
+Создать класс Invoice. 
+В теле класса создать три поля int account, string customer, string provider, которые должны 
+быть проинициализированы один раз (при создании экземпляра данного класса) без возможности их дальнейшего изменения. 
+В теле класса создать два закрытых поля string article, int quantity Создать метод расчета 
+стоимости заказа с НДС и без НДС. 
+Написать программу, которая выводит на экран сумму оплаты заказанного товара с НДС или без НДС.
+ */
+Console.WriteLine();
+Console.WriteLine("Task 4");
+Invoice invoice = new Invoice(00534, "Atlant", "Doorios");
+invoice.SetOrderDetails("Door", 3);
+decimal pricePerItem = 22500.00m;
+
+invoice.DisplayInvoice(true, pricePerItem); 
+invoice.DisplayInvoice(false, pricePerItem); 
 
 
 
@@ -111,8 +131,7 @@ public class Employee
         decimal salary = CalculateSalary();
         return salary * 0.18m;
     }
-
-    // Метод для вывода информации о сотруднике
+    
     public void DisplayInfo()
     {
         Console.WriteLine($"Last name: {LastName}");
@@ -180,3 +199,55 @@ class Converter
     };
 }
 
+class  Invoice
+{
+    public int Account { get; }
+    public string Customer { get; }
+    public string Provider { get; }
+    
+    private string Article { get; set; }
+    private int Quantity { get; set; }
+    
+    public Invoice(int account, string customer, string provider)
+    {
+        Account = account;
+        Customer = customer;
+        Provider = provider;
+    }
+
+    public void SetOrderDetails(string article, int quantity)
+    {
+        Article = article;
+        Quantity = quantity;
+    }
+
+    public decimal CalculateTotalWithoutVAT(decimal pricePerItem)
+    {
+        return pricePerItem * Quantity;
+    }
+    
+    public decimal CalculateTotalWithVAT(decimal pricePerItem)
+    {
+        decimal totalWithoutVAT = CalculateTotalWithVAT(pricePerItem);
+        decimal vatRate = 0.20m;
+        return totalWithoutVAT + (totalWithoutVAT * vatRate);
+    }
+    
+    public void DisplayInvoice(bool includeVAT, decimal pricePerItem)
+    {
+        Console.WriteLine($"Account: {Account}");
+        Console.WriteLine($"Customer: {Customer}");
+        Console.WriteLine($"Provider: {Provider}");
+        Console.WriteLine($"Product: {Article}");
+        Console.WriteLine($"Quantity: {Quantity}");
+            
+        if (includeVAT)
+        {
+            Console.WriteLine($"Total with VAT: {CalculateTotalWithVAT(pricePerItem)} uah");
+        }
+        else
+        {
+            Console.WriteLine($"Total without VAT: {CalculateTotalWithoutVAT(pricePerItem)} uah");
+        }
+    }
+}
